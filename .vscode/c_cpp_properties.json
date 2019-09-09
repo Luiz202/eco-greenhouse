@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/luiz/Arduino/libraries/DHT_sensor_library",
+                "/home/luiz/.arduino15/packages/esp8266/tools/**",
+                "/home/luiz/.arduino15/packages/esp8266/hardware/esp8266/2.5.2/**",
+                "/home/luiz/.arduino15/packages/esp8266/hardware/esp8266/2.5.2/libraries/ESP8266WebServer/src"
+            ],
+            "forcedInclude": [],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
