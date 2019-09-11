@@ -1,30 +1,23 @@
 import React from 'react';
 import { StyleSheet, Text, View, screenWidth, /* Button */ } from 'react-native';
-// import Graph from './src/components/Graph';
 import Header from './src/components/Header';
+import Culture from './src/components/Culture'
 
 export default App = () => {
-  return (
-    <View style={{flex: 1}}>
-      <View style={styles.headerContainer}>
-        <Header />  
-       </View>
+  return (<View style={{
+    flex: 1, 
+    backgroundColor: '#ddd'
+    }}>
+      <Header />  
       <View style={styles.container}>
-        <Text style={styles.title}>app>text</Text>
       </View>
+      <Culture />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  headerContainer: {
-    flex: 1,
-    width: 300,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    /* padding: 16, */
-  },
+
   
   container: {
     flex: 1,
