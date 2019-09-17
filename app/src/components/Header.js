@@ -2,14 +2,14 @@ import React from 'react'
 import { Text, View, StyleSheet, TouchableOpacity, Alert, Dimensions, Image, } from 'react-native'
 import Status from './Status'
 import Temperature from './Temperature'
-
+import Humidity from './Humidity'
 
 /* const viewportWidth = Dimensions.get('window').width
 const viewportHeight = Dimensions.get('window').height */
 
 export default Header = () => {
     const menuToggle = () => {
-       Alert.alert('quem clico e gay')
+       Alert.alert('')
     }
 
     return (
@@ -24,10 +24,18 @@ export default Header = () => {
                         /> 
                     </View>
                 </TouchableOpacity>
-            </View>
-            <Temperature />
+            </View> 
 
-        </View>
+            <View>
+                <View style={{flex:1, minHeight:100,}}>
+                    <Temperature temperature={'32'} label={'Temperatura Interna'} />
+                    </View>
+
+                    <View style={{flex: 1, minHeight:100, }}> 
+                        <Humidity hum={'46'} label={'umidade do solo'} />
+                    </View>
+                </View>
+            </View>
     );    
 }
 

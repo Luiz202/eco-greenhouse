@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
+
 export default class Temperature extends Component  /* (this.props.value, this.props.label) */  {
         render() {
             return (
@@ -11,7 +12,7 @@ export default class Temperature extends Component  /* (this.props.value, this.p
             }}> 
                 <View style={styles.tempBox}>
                     <Text style={styles.temp}>
-                        {this.props.temperature}°C
+                        {this.props.hum}%
                     </Text> 
                     <View >
                         <Text>
@@ -40,4 +41,3 @@ export default class Temperature extends Component  /* (this.props.value, this.p
             flexDirection: 'row',
         }
     })
-

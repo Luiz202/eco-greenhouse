@@ -1,13 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View, screenWidth, /* Button */ } from 'react-native';
+import { StyleSheet, Text, View, screenWidth, TouchableOpacity } from 'react-native';
 import Header from './src/components/Header';
 import Culture from './src/components/Culture'
 
 export default App = () => {
-  return (<View style={{
-    flex: 1, 
-    backgroundColor: '#ddd'
-    }}>
+  return (<View style={{ flex: 1, backgroundColor: '#ddd' }}>
       <Header />  
       <View style={styles.container}>
       </View>
